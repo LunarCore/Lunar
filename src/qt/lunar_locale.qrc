@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/lunar_bg.qm</file>
+        <file alias="de">locale/lunar_de.qm</file>
+        <file alias="en">locale/lunar_en.qm</file>
+        <file alias="es">locale/lunar_es.qm</file>
+        <file alias="fi">locale/lunar_fi.qm</file>
+        <file alias="fr">locale/lunar_fr.qm</file>
+        <file alias="it">locale/lunar_it.qm</file>
+        <file alias="ja">locale/lunar_ja.qm</file>
+        <file alias="pl">locale/lunar_pl.qm</file>
+        <file alias="pt">locale/lunar_pt.qm</file>
+        <file alias="ru">locale/lunar_ru.qm</file>
+        <file alias="sk">locale/lunar_sk.qm</file>
+        <file alias="sv">locale/lunar_sv.qm</file>
+        <file alias="vi">locale/lunar_vi.qm</file>
+        <file alias="zh_CN">locale/lunar_zh_CN.qm</file>
+        <file alias="zh_TW">locale/lunar_zh_TW.qm</file>
+    </qresource>
+</RCC>

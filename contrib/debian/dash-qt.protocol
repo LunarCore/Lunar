@@ -1,6 +1,6 @@
 [Protocol]
-exec=dash-qt '%u'
-protocol=dash
+exec=lunar-qt '%u'
+protocol=lunar
 input=none
 output=none
 helper=true

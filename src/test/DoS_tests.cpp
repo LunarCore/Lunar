@@ -13,7 +13,7 @@
 #include "serialize.h"
 #include "util.h"
 
-#include "test/test_dash.h"
+#include "test/test_lunar.h"
 
 #include <stdint.h>
 

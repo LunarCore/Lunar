@@ -1,15 +1,15 @@
 [Unit]
-Description=Dash's distributed currency daemon
+Description=Lunar's distributed currency daemon
 After=network.target
 
 [Service]
-User=dashcore
-Group=dashcore
+User=lunarcore
+Group=lunarcore
 
 Type=forking
-PIDFile=/var/lib/dashd/dashd.pid
-ExecStart=/usr/bin/dashd -daemon -pid=/var/lib/dashd/dashd.pid \
--conf=/etc/dashcore/dash.conf -datadir=/var/lib/dashd -disablewallet
+PIDFile=/var/lib/lunard/lunard.pid
+ExecStart=/usr/bin/lunard -daemon -pid=/var/lib/lunard/lunard.pid \
+-conf=/etc/lunarcore/lunar.conf -datadir=/var/lib/lunard -disablewallet
 
 Restart=always
 PrivateTmp=true

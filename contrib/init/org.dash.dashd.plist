@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.dash.dashd</string>
+	<string>org.lunar.lunard</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/dashd</string>
+		<string>/usr/local/bin/lunard</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>
