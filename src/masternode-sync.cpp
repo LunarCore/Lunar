@@ -48,6 +48,7 @@ bool CMasternodeSync::CheckNodeHeight(CNode* pnode, bool fDisconnectStuckNodes)
 
 bool CMasternodeSync::IsBlockchainSynced(bool fBlockAccepted)
 {
+    return true;
     static bool fBlockchainSynced = false;
     static int64_t nTimeLastProcess = GetTime();
     static int nSkipped = 0;
@@ -142,6 +143,7 @@ void CMasternodeSync::Reset()
 
 std::string CMasternodeSync::GetAssetName()
 {
+    return "MASTERNODE_SYNC_FINISHED";
     switch(nRequestedMasternodeAssets)
     {
         case(MASTERNODE_SYNC_INITIAL):      return "MASTERNODE_SYNC_INITIAL";
@@ -252,6 +254,7 @@ void CMasternodeSync::ProcessTick()
     if(nTick++ % MASTERNODE_SYNC_TICK_SECONDS != 0) return;
     if(!pCurrentBlockIndex) return;
 
+    return;
     //the actual count of masternodes we have currently
     int nMnCount = mnodeman.CountMasternodes();
 

@@ -24,7 +24,7 @@ static const int MASTERNODE_SYNC_FINISHED        = 999;
 static const int MASTERNODE_SYNC_TICK_SECONDS    = 6;
 static const int MASTERNODE_SYNC_TIMEOUT_SECONDS = 30; // our blocks are 2.5 minutes so 30 seconds should be fine
 
-static const int MASTERNODE_SYNC_ENOUGH_PEERS    = 6;
+static const int MASTERNODE_SYNC_ENOUGH_PEERS    = 1;
 
 extern CMasternodeSync masternodeSync;
 
@@ -69,13 +69,13 @@ public:
 
     void SendGovernanceSyncRequest(CNode* pnode);
 
-    bool IsFailed() { return nRequestedMasternodeAssets == MASTERNODE_SYNC_FAILED; }
+    bool IsFailed() { return false; }
     bool IsBlockchainSynced(bool fBlockAccepted = false);
-    bool IsMasternodeListSynced() { return nRequestedMasternodeAssets > MASTERNODE_SYNC_LIST; }
-    bool IsWinnersListSynced() { return nRequestedMasternodeAssets > MASTERNODE_SYNC_MNW; }
-    bool IsSynced() { return nRequestedMasternodeAssets == MASTERNODE_SYNC_FINISHED; }
+    bool IsMasternodeListSynced() { return true; }
+    bool IsWinnersListSynced() { return true; }
+    bool IsSynced() { return true; }
 
-    int GetAssetID() { return nRequestedMasternodeAssets; }
+    int GetAssetID() { return MASTERNODE_SYNC_FINISHED; }
     int GetAttempt() { return nRequestedMasternodeAttempt; }
     std::string GetAssetName();
     std::string GetSyncStatus();
