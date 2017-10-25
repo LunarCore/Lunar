@@ -174,7 +174,7 @@ public:
             
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("ec2-54-187-232-12.us-west-2.compute.amazonaws.com", "ec2-54-187-232-12.us-west-2.compute.amazonaws.com"));
+        //vSeeds.push_back(CDNSSeedData("ec2-54-187-232-12.us-west-2.compute.amazonaws.com", "ec2-54-187-232-12.us-west-2.compute.amazonaws.com"));
         
         // Lunar addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
